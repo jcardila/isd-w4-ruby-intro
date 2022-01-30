@@ -14,3 +14,13 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+my_shopping_list = ["milk", "eggs", "bacon", "beer"]
+friend_shopping_list = ["beer", "cookies", "apples"]
+
+shared_shopping_list = my_shopping_list + friend_shopping_list
+#unique
+unique_combined_list = shared_shopping_list.uniq
+#sort
+sorted_combined_list = unique_combined_list.sort
+puts sorted_combined_list
