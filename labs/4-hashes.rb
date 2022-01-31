@@ -26,3 +26,17 @@ weather_data = {
     { temperature: 70, conditions: "Partly Cloudy" }
   ]
 }
+
+today_temp = weather_data[:current][:temperature]
+today_condition = weather_data[:current][:conditions]
+tomorrow_temp = weather_data[:forecast][0][:temperature]
+tomorrow_condition = weather_data[:forecast][0][:conditions]
+nextday_temp = weather_data[:forecast][1][:temperature]
+nextday_condition = weather_data[:forecast][1][:conditions]
+
+#string interpolation se llama eso
+msj1 = "Currently it is #{today_temp} and #{today_condition}. Tomorrow it will be #{tomorrow_temp} and #{tomorrow_condition}."
+msj2 = "The next day we will see #{nextday_condition} skies, with a temperature of #{nextday_temp}."
+
+puts msj1
+puts msj2
